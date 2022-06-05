@@ -30,3 +30,4 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\PrepageController::class, 'prepage'])->name('prepage');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/edit-data', [App\Http\Controllers\HomeController::class, 'edit'])->name('edit');

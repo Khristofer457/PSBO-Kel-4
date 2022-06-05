@@ -26,4 +26,9 @@ class HomeController extends Controller
         return view('dashboard');
     }
 
+    public function edit()
+    {
+        return view('editdata');
+    }
+
 }

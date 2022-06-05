@@ -98,7 +98,7 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link {{ Request::is('/home') ? 'active' : ''}}" href="/home"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link {{ Request::is('home') ? 'active' : ''}}" href="/home"
                                 aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
                                 <span class="hide-menu">Data Kesehatan Sapi</span>
@@ -154,77 +154,75 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
-                            <h3 class="box-title">Tabel Data Sapi</h3>
-                            <div class="d-md-flex">
-                            <a href="/tambahdata" class="btn btn-primary text-white d-grid" role="button" aria-pressed="true">Masukan Data Baru</a>
+                            <h3 class="box-title">Edit Data Sapi</h3>
+                        <div class="card-heading">
+                </div>
+               <div class="container">
+                <form method="POST" action="#">
+                      <div class="form-group mt-2">
+                        <label for="input-sm">Nama Sapi</label>
+                        <input id="nama_sapi" type="nama_sapi" class="form-control" name="nama_sapi" autofocus>
+                      </div>
+                       <div class="name">Upload Gambar Sapi</div>
+                        <div class="value">
+                            <div class="input-group js-input-file">
+                            <input class="input-file" type="file" name="file_cv" id="file">
                         </div>
-                        <div class="py-4 table-responsive">
-                                <table class="table text-nowrap table-striped table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th class="border-top-0 text-center">Nama Sapi</th>
-                                            <th class="border-top-0 text-center">Foto Sapi</th>
-                                            <th class="border-top-0 text-center">No Eartag</th>
-                                            <th class="border-top-0 text-center">Jenis Sapi</th>
-                                            <th class="border-top-0 text-center">Jenis Kelamin</th>
-                                            <th class="border-top-0 text-center">Tanggal Lahir</th>
-                                            <th class="border-top-0 text-center">Berat Badan</th>
-                                            <th class="border-top-0 text-center">Tinggi Pundak</th>
-                                            <th class="border-top-0 text-center">Lebar Dada</th>
-                                            <th class="border-top-0 text-center">Panjang Badan</th>
-                                            <th class="border-top-0 text-center">Status Kesehatan</th>
-                                            <th class="border-top-0 text-center">Keterangan Perawatan Khusus</th>
-                                            <th class="border-top-0 text-center">Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Deshmukh</td>
-                                            <td>Prohaska</td>
-                                            <td>@Genelia</td>
-                                            <td>admin</td>
-                                            <td>admin</td>
-                                            <td>admin</td>
-                                            <td>admin</td>
-                                            <td>admin</td>
-                                            <td>admin</td>
-                                            <td>admin</td>
-                                            <td>admin</td>
-                                            <td>
-                                                <div class="btn-group">
-                                                <div class="d-md-flex">
-                                                    <a href="/edit-data" class="btn btn-primary text-white d-grid" role="button" aria-pressed="true">Edit</a>
-                                                </div>
-                                                <div class="d-md-flex mr-1">
-                                                    <a href="#" class="btn btn-danger text-white d-grid" role="button" aria-pressed="true">Delete</a>
-                                                </div>
-                                                <div class="d-md-flex mr-1">
-                                                    <a href="#" class="btn btn-secondary text-white d-grid" role="button" aria-pressed="true">Call Doctor</a>
-                                                </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Deshmukh</td>
-                                            <td>Gaylord</td>
-                                            <td>@Ritesh</td>
-                                            <td>member</td>
-                                            <td>member</td>
-                                            <td>member</td>
-                                            <td>member</td>
-                                            <td>member</td>
-                                            <td>member</td>
-                                            <td>member</td>
-                                            <td>member</td>
-                                            <td>member</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        </div>
+                        <div class="mt-3">
+                            <label for="input-sm">No Eartag</label>
+                            <input id="no_eartag" type="no_eartag" class="form-control" name="no_eartag" autofocus>
+                      </div>
+                      <div class="mt-3">
+                            <label for="input-sm">Jenis Sapi</label>
+                            <input id="jenis_sapi" type="jenis_sapi" class="form-control" name="jenis_sapi" autofocus>
+                      </div>
+                       <div class="mt-3">
+                            <label for="input-sm">Jenis Kelamin</label>
+                            <input id="jenis_kelamin" type="jenis_kelamin" class="form-control" name="jenis_kelamin" autofocus>
+                      </div>
+                       <div class="mt-3">
+                            <label for="input-sm">Tanggal Lahir</label>
+                            <input id="jenis_sapi" type="jenis_sapi" class="form-control" name="jenis_sapi" autofocus>
+                      </div>
+                      <div class="mt-3">
+                            <label for="input-sm">Berat Badan</label>
+                            <input id="berat_badan" type="berat_badan" class="form-control" name="berat_badan" autofocus>
+                      </div>
+                      <div class="mt-3">
+                            <label for="input-sm">Tinggi Pundak</label>
+                            <input id="tinggi_pundak" type="tinggi_pundak" class="form-control" name="tinggi_pundak" autofocus>
+                      </div>
+                      <div class="mt-3">
+                            <label for="input-sm">Lebar Dada</label>
+                            <input id="lebar_dada" type="lebar_dada" class="form-control" name="lebar_dada" autofocus>
+                      </div>
+                      <div class="mt-3">
+                            <label for="input-sm">Panjang Bedan</label>
+                            <input id="panjang_badan" type="panjang_badan" class="form-control" name="panjang_badan" autofocus>
+                      </div>
+                      <div class="name mt-3">Status Kesehatan</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <select id="status_kesehatan" type="status_kesehatan" name="status_kesehatan" class="form-select mb-3" aria-label="Default select example">
+                                  <option selected>Pilih Status Kesehatan Sapi</option>
+                                  <option value="1">Sakit</option>
+                                  <option value="2">Sehat</option>
+                                </select>
                             </div>
-                    </div> 
-               </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="example4">Keterangan Perawatan Khusus</label>
+                            <textarea type="text" class="form-control" id="keterangan_perawatan_khusus" name="keterangan_perawatan_khusus" placeholder="Jika ada, Berikan keterangan perawatan khusus yang diberikan kepada sapimu!"></textarea>
+                        </div>
+                        <div class="row pull-right">
+                            <div class="col-md-8 offset-md-4 mt-4 mb-2">
+                                <button type="submit" class="btn btn-success text-white rounded col-md-4 col-form-label text-center">
+                                    Submit Data
+                                </button>
+                            </div>
+                        </div>
+            </form>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
